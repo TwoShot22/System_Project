@@ -1,0 +1,23 @@
+.stack
+size = 12
+
+.code
+// sti maxCount 10
+ldi 10
+sta 0
+// sti sum 0
+ldi 0
+sta 4
+// sti count = 0
+ldi 0
+sta 8
+
+// AC = count
+lda 8
+// AC = AC + 1
+addi 1
+// count = AC
+sta 8
+
+//exit
+halt 0
