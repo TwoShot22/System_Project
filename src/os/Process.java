@@ -47,6 +47,7 @@ public class Process {
 			case cmp: cmp();break;
 			case igz: igz();break;
             case halt: halt();break;
+            case prt: prt();break;
 		}
 		/////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -56,6 +57,13 @@ public class Process {
 			return Process.EState.terminated;
 		}
 		return EState.running;
+	}
+
+	private void prt() {
+		Vector<Register> registers = this.pcb.getRegisters();
+		Register pc = registers.get(ERegister.ePC.ordinal());
+		pc.set(pc.get()+1);
+		System.out.println("Prt : "+registers.get(ERegister.eAC.ordinal()).get());
 	}
 
 	private void halt() {
@@ -126,7 +134,7 @@ public class Process {
 
 	// Global Constants
 	private enum Instruction {
-		ldi, lda, sta, addi, cmp, igz, halt
+		ldi, lda, sta, addi, cmp, igz, halt, prt
 	}
 
 	public enum EState {nnew, running, wait, ready, terminated}

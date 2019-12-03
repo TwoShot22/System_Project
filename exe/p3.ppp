@@ -1,0 +1,20 @@
+.stack
+size = 12
+
+.code
+ldi 1 
+prt 0
+
+ldi 2 
+prt 0
+
+ldi 3 
+prt 0
+
+ldi 4 
+prt 0
+
+ldi 5 
+prt 0
+
+halt 0
