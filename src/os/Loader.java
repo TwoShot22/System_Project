@@ -53,7 +53,7 @@ public class Loader {
 				address = 0;
 			}
 			temp.add((insti << 16) + address);
-			System.out.println("instruction : " + inst + " // Address or Value : " + address);
+			System.out.println("instruction : " + inst + " // " + address);
 		}
 		int[] array = new int[temp.size()];
 		for (int i = 0; i < array.length; i++) {
