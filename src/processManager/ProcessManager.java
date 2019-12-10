@@ -1,4 +1,7 @@
-package os;
+package processManager;
+
+import os.FileManager;
+import os.MemoryManager;
 
 public class ProcessManager {
     private Loader loader;

@@ -1,5 +1,8 @@
 package os;
 
+import processManager.Loader;
+import processManager.ProcessManager;
+
 public class OperatingSystem {
 	
 	// Component

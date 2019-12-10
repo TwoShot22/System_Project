@@ -1,4 +1,4 @@
-package os;
+package processManager;
 
 public class ProcessQueue {
     public void enqueue(Process process){

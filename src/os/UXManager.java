@@ -3,6 +3,10 @@ package os;
 import java.util.Scanner;
 import java.util.Vector;
 
+import processManager.Loader;
+import processManager.Process;
+import processManager.ProcessManager;
+
 public class UXManager {
 
 	// Association
